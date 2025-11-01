@@ -33,10 +33,10 @@ const Header = () => {
           <NavLink href="/collections">Collections</NavLink>
         </DesktopNav>
         <MobileActions>
-          <UnstyledButton>
+          <ShoppingCartButton>
           <Icon id="shopping-bag" />
           <VisuallyHidden>Open cart</VisuallyHidden>
-          </UnstyledButton>
+          </ShoppingCartButton>
 
           <UnstyledButton>
           <Icon id="search" />
@@ -115,6 +115,10 @@ const Filler = styled.div`
   @media ${QUERIES.tabletAndDown} {
     display: none;
   }
+`;
+
+const ShoppingCartButton = styled(UnstyledButton)`
+  transform: translateX(-2px);
 `;
 
 const NavLink = styled.a`
