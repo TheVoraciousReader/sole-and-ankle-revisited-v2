@@ -22,6 +22,9 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
       <Dialog.Close asChild>
         <CloseButton onClick={onDismiss}>
           <Icon id="close" />
+            <VisuallyHidden>
+              Dismiss menu
+            </VisuallyHidden>
         </CloseButton>
       </Dialog.Close>
       <Filler />
@@ -67,7 +70,7 @@ const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 22px;
+  gap: 16px;
 `;
 
 const CloseButton = styled(UnstyledButton)`
